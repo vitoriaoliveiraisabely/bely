@@ -1,1 +1,104 @@
-# bely
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mangá Story</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            body {
+                background-color: #121212;
+                color: #FFFFFF;
+            }
+
+            header {
+                background-color: #E50914;
+                color: #FFFFFF;
+                text-align: center;
+                padding: 24px 16px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            header h3 {
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+
+            main {
+                max-width: 900px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #1E1E1E;
+                border-radius: 8px;
+            }
+
+            .manga-header {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            h2 {
+                color: #E50914;
+                margin-bottom: 8px;
+            }
+
+            .autor {
+                color: #AAAAAA;
+                font-size: 0.9rem;
+                margin-bottom: 16px;
+            }
+
+            p {
+                line-height: 1.6;
+                font-size: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Mangá Story</h1>
+            <h3>Sua jornada no universo dos mangás começa aqui!</h3>
+        </header>
+
+        <main>
+            <div class="manga-header">
+                <img src="logo-manga.png" alt="Logotipo do Mangá Story com estilo anime">
+                <div>
+                    <h2>Bem-vindo ao Mangá Story</h2>
+                    <p class="autor">Por: Isabelli Moraes</p>
+                </div>
+            </div>
+
+            <p>
+                Prepare-se para mergulhar nas melhores histórias, batalhas épicas e romances inesquecíveis! 
+                Aqui no <strong>Mangá Story</strong>, reunimos os capítulos mais atualizados, obras clássicas e lançamentos incríveis para você ler onde e quando quiser.
+            </p>
+            <br>
+            <p>
+                Explore nossas categorias, monte sua biblioteca favorita e faça parte da nossa comunidade otaku. Boa leitura!
+            </p>
+        </main>
+    </body>
+</html>
