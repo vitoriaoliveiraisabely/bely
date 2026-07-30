@@ -15,10 +15,13 @@
             body {
                 background-color: #121212;
                 color: #FFFFFF;
+                /* Background meio a meio */
+                background: linear-gradient(to right, #121212 50%, #1e1e1e 50%);
             }
 
             header {
-                background-color: #E50914;
+                /* Header com degradê vermelho e azul */
+                background: linear-gradient(to right, #E50914, #007bff);
                 color: #FFFFFF;
                 text-align: center;
                 padding: 24px 16px;
@@ -41,7 +44,7 @@
                 max-width: 900px;
                 margin: 20px auto;
                 padding: 20px;
-                background-color: #1E1E1E;
+                background-color: transparent; /* Main transparente para o background aparecer */
                 border-radius: 8px;
             }
 
@@ -60,7 +63,7 @@
             }
 
             h2 {
-                color: #E50914;
+                color: #E50914; /* Título vermelho */
                 margin-bottom: 8px;
             }
 
@@ -74,6 +77,20 @@
                 line-height: 1.6;
                 font-size: 1rem;
             }
+
+            /* Galeria de imagens */
+            .galeria {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .galeria img {
+                width: calc(33.33% - 10px);
+                height: 150px;
+                object-fit: cover;
+            }
         </style>
     </head>
     <body>
@@ -84,7 +101,7 @@
 
         <main>
             <div class="manga-header">
-                <img src="logo-manga.png" alt="Logotipo do Mangá Story com estilo anime">
+                <img src="https://i.postimg.cc/yxSXbMRx/5082267095011883761.jpg" alt="Logotipo do Mangá Story com estilo anime">
                 <div>
                     <h2>Bem-vindo ao Mangá Story</h2>
                     <p class="autor">Por: Isabely</p>
@@ -99,6 +116,15 @@
             <p>
                 Explore nossas categorias, monte sua biblioteca favorita e faça parte da nossa comunidade otaku. Boa leitura!
             </p>
+
+            <div class="galeria">
+                <img src="manga1.jpg" alt="Capa do mangá Naruto">
+                <img src="manga2.jpg" alt="Capa do mangá One Piece">
+                <img src="manga3.jpg" alt="Capa do mangá Attack on Titan">
+                <img src="manga4.jpg" alt="Capa do mangá Jujutsu Kaisen">
+                <img src="manga5.jpg" alt="Capa do mangá Demon Slayer">
+                <img src="manga6.jpg" alt="Capa do mangá Chainsaw Man">
+            </div>
         </main>
     </body>
 </html>
